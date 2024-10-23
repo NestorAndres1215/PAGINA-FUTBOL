@@ -1,0 +1,323 @@
+.container-blogs {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 3rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.card-blog .container-img {
+	width: 100%;
+	height: 250px;
+	border-radius: 2rem;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.card-blog .container-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 2rem;
+}
+
+.button-group-blog {
+	position: absolute;
+	bottom: 1.5rem;
+	right: -2.5rem;
+	display: flex;
+	gap: 0.7rem;
+	z-index: -1;
+	transition: all 0.3s ease;
+}
+
+.card-blog:hover .button-group-blog {
+	z-index: 0;
+	right: 1.5rem;
+}
+
+.button-group-blog span {
+	background-color: #fff;
+	padding: 1rem;
+	border-radius: 50%;
+	transition: all 0.4s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.button-group-blog span i {
+	font-size: 1.3rem;
+}
+
+.button-group-blog span:hover i {
+	color: #fff;
+}
+
+.content-blog h3 {
+	font-size: 1.8rem;
+	margin-bottom: 1.7rem;
+	font-weight: 500;
+}
+
+.content-blog h3:hover {
+	cursor: pointer;
+}
+
+.content-blog p {
+	font-size: 0.9rem;
+	line-height: 1.4;
+	margin: 10px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clam: 5;
+	-webkit-box-orient: vertical;
+	color: #777;
+}
+
+.content-blog span {
+	font-size: 1.3rem;
+}
+
+.banner {
+
+	justify-content: center;
+	align-items: center;
+	height: 35rem;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(100deg, #000000, #00000020), url('../img/img-video.jpg');
+	color: white;
+	padding: 10px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.header h2 {
+	margin: 0;
+	font-size: clamp(1.5rem, 4vw, 2rem);
+}
+
+.ver-todos {
+	color: #aaa;
+	text-decoration: none;
+	font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.video-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+	padding: 20px;
+}
+
+.video-overlay h3 {
+	margin: 0;
+	font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+.video-secundario {
+	display: flex;
+	align-items: center;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	color: white;
+	background-color: #00000020;
+	border: none;
+}
+
+.video-secundario img {
+	width: 100px;
+	height: 70px;
+	object-fit: cover;
+}
+
+.video-secundario-info {
+	padding: 10px;
+}
+
+.video-secundario-info h4 {
+	margin: 0;
+	font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+.play-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: clamp(40px, 10vw, 60px);
+	height: clamp(40px, 10vw, 60px);
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.play-icon::after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-top: clamp(8px, 2vw, 10px) solid transparent;
+	border-bottom: clamp(8px, 2vw, 10px) solid transparent;
+	border-left: clamp(16px, 4vw, 20px) solid white;
+}
+
+.contenedor {
+	margin: 0 auto;
+	padding: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.videos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas, una para el principal y otra para los secundarios */
+    gap: 20px;
+}
+
+
+.navbar {
+	position: relative; /* O relative según lo que necesites */
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	z-index: 1000; /* Asegúrate de que el navbar esté por encima de otros elementos */
+}
+.video-principal {
+    grid-column: 1 / 2; /* Ocupa la primera columna */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    color: white;
+    width: 100%; /* Ajustamos el ancho al 100% del contenedor */
+   
+}
+.video-principal img {
+    width: 100%; /* Ocupa el ancho completo de la pantalla */
+    max-width: 700px; /* Máximo ancho para mantener proporciones en pantallas grandes */
+    height: auto; /* Se ajusta automáticamente para mantener la proporción */
+    border-radius: 10px; /* Esquinas redondeadas */
+    object-fit: cover;
+}
+
+.videos-secundarios {
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los videos secundarios */
+}
+
+.video-secundario {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    background-color: #00000020;
+    border: none;
+    width: 100%; /* Ajustamos el ancho */
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 700px) {
+    .banner {
+        margin-top: auto;
+        height: 400px; /* Altura para pantallas pequeñas */
+        padding: 20px; /* Espaciado */
+    }
+
+    .video-principal {
+        width:390px; /* Ocupa el ancho completo de la pantalla */
+        max-width: 390px; /* Máximo ancho para pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 10px; /* Esquinas redondeadas */
+    }
+
+    .video-principal img {
+        width: 390px; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+   
+}
+
+/* Estilos para pantallas aún más pequeñas */
+@media (min-width: 481px) and (max-width: 768px) {
+	.banner {
+        margin-top: auto;
+        height: 300px; /* Altura para pantallas pequeñas */
+        padding: 20px; /* Espaciado */
+    }
+
+    .video-principal {
+        width:330px; /* Ocupa el ancho completo de la pantalla */
+        max-width: 330px; /* Máximo ancho para pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 10px; /* Esquinas redondeadas */
+    }
+
+    .video-principal img {
+        width: 340px; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .video-secundario {
+        display: none; /* Esconder videos secundarios en pantallas pequeñas */
+    }
+}
+@media (max-width: 480px) {
+    .banner {
+        height: 300px; /* Altura para pantallas pequeñas */
+        padding: 10px; /* Espaciado */
+    }
+    .video-principal {
+        width: 350px; /* Ancho completo */
+        height: auto; /* Ajusta automáticamente la altura */
+    }
+    .video-secundario {
+        display: none; /* Esconder videos secundarios en pantallas pequeñas */
+    }
+}
+@media (min-width:0px) and (max-width: 480px) {
+	.banner {
+        margin-top: auto;
+        height: 300px; /* Altura para pantallas pequeñas */
+        padding: 20px; /* Espaciado */
+    }
+
+    .video-principal {
+        width:320px; /* Ocupa el ancho completo de la pantalla */
+        max-width: 330px; /* Máximo ancho para pantallas pequeñas */
+        height: auto; /* Ajusta la altura automáticamente */
+        border-radius: 10px; /* Esquinas redondeadas */
+    }
+
+    .video-principal img {
+        width: 340px; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    .video-secundario {
+        display: none; /* Esconder videos secundarios en pantallas pequeñas */
+    }
+}
