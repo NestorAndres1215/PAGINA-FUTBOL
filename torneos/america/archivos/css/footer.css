@@ -1,0 +1,32 @@
+.footer {
+    display: flex; /* Habilita Flexbox para el alineamiento */
+    align-items: center; /* Centra verticalmente los elementos dentro de la sección */
+    justify-content: center; /* Centra horizontalmente los elementos dentro de la sección */
+    height: 10rem; /* Altura de la sección */
+    background-size: cover; /* Cubre toda la sección */
+    background-image: url('../img/logo-video.PNG'); /* Imagen de fondo */
+    color: white; /* Color del texto */
+    background-position: center; /* Alinea la imagen de fondo al centro */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding-top: 2rem; /* Ajusta el valor según lo que necesites */
+margin-top: 5rem;
+}
+
+
+.footer-content {
+    text-align: center; /* Centra el texto en el footer */
+}
+
+.social-icons {
+    margin-top: 0.5rem; /* Espacio entre el texto y los iconos */
+}
+
+.social-icon {
+    margin: 0 10px; /* Espacio entre los iconos */
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Elimina subrayado */
+}
+
+.social-icon:hover {
+    text-decoration: underline; /* Subraya al pasar el mouse */
+}

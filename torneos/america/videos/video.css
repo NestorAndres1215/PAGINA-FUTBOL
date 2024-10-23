@@ -2,10 +2,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../img/logo-video.PNG');
+    background-image: url('img/logo-video.PNG');
     margin: 0;
+    height: 606px;
 }
-
 iframe {
     margin-top: 20px;
     width: 1300px;
