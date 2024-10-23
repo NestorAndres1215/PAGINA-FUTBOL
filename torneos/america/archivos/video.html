@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa America </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/video.css">
+    <link rel="stylesheet" href="css/navbar.css">
+   <!-- Linking Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+   <!-- Linking Swiper CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+   <header>
+       <nav class="navbar">
+           <li class="nav-logo">
+               <img src="img/logo.png" alt="hola" class="logo-img ">
+           </li>
+           <ul class="nav-menu">
+
+               <button id="menu-close-button" class="fas fa-times"></button>
+
+               <li class="nav-item">
+                   <a href="#" class="nav-link">INICIO</a>
+               </li>
+               <li class="nav-item">
+                   <a href="historia.html" class="nav-link">HISTORIA</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#menu" class="nav-link">SELECCIONES</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#testimonials" class="nav-link">PALMARES</a>
+               </li>
+               <li class="nav-item">
+                   <a href="#gallery" class="nav-link">ESTADISTICAS</a>
+               </li>
+
+           </ul>
+
+           <button id="menu-open-button" class="fas fa-bars"></button>
+       </nav>
+   </header>
+
+    <div class="container">
+        <div style="margin-top: 10px;">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4" id="grid-container">
+            </div>
+        </div>
+        <br />
+        <nav aria-label="Page navigation example">
+            <ul class="pagination" style="list-style: none; padding: 0; margin: 0; text-align: center;">
+                <li class="page-item">
+                    <button class="page-link" id="prevPage" onclick="prevPage()">Anterior</button>
+                </li>
+                <li class="page-item">
+                    <button class="page-link" id="nextPage" onclick="nextPage()">Siguiente</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="video.js"></script>
+    <script src="navbar.js" ></script>
+</body>
+
+</html>

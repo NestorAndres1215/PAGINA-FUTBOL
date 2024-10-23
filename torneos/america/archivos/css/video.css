@@ -1,0 +1,32 @@
+/* Estilo para el contenedor de cada tarjeta de video */
+.grid-item {
+    margin-bottom: 20px; /* Espacio inferior entre las tarjetas */
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espacio interno */
+    height: 70px;
+    text-align: center; /* Centrar el texto */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el párrafo dentro del cuerpo de la tarjeta */
+.card-body p {
+    font-size: 10px; /* Tamaño de fuente */
+    color: #343a40; /* Color de texto */
+    margin: 0; /* Sin margen */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo para la tarjeta completa */
+.card {
+    transition: transform 0.3s; /* Animación suave al hacer hover */
+}
+
+/* Efecto de hover para la tarjeta */
+.card:hover {
+    transform: scale(1.05); /* Aumentar tamaño ligeramente al pasar el mouse */
+}

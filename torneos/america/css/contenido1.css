@@ -1,0 +1,132 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+:root {
+	--white-color: #fff;
+
+	--font-size-m: 1.12rem;
+	--font-size-xl: 2rem;
+	--font-size-xxl: 2.3rem;
+	--font-weight-normal: 400;
+	--font-weight-medium: 500;
+	--font-weight-semibold: 600;
+	--font-weight-bold: 700;
+	--border-radius-s: 8px;
+	--border-radius-m: 30px;
+	--border-radius-circle: 50%;
+	--site-max-width: 1300px;
+}
+
+html {
+	scroll-behavior: smooth;
+	
+}
+
+.hero-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 45rem;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(100deg, #000000, #00000020), url('../img/banner.jpg');
+	color: white;
+
+	padding: 20px;
+}
+
+
+.hero-section .hero-details .button {
+	padding: 10px 26px;
+	display: block;
+	border: 2px solid transparent;
+	border-radius: var(--border-radius-m);
+
+
+	transition: 0.3s ease;
+}
+
+.hero-section .hero-details {
+	color: var(--white-color);
+	margin-top: 10px;
+}
+
+.hero-section .hero-details .title {
+	font-size: var(--font-size-xxl);
+	color: var(--secondary-color);
+	font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+	margin-top: 8px;
+	max-width: 70%;
+	font-size: var(--font-size-xl);
+	font-weight: var(--font-weight-semibold);
+}
+
+.hero-section .hero-details .description {
+	max-width: 70%;
+	margin: 24px 0 40px;
+	font-size: var(--font-size-m);
+}
+
+.hero-section .hero-details .buttons {
+	display: flex;
+	gap: 23px;
+}
+
+
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .button.contact-us {
+	color: var(--white-color);
+	border-color: var(--white-color);
+	background: transparent;
+}
+
+
+@media (max-width: 768px) {
+	.hero-details {
+		margin-top: 135px;
+		padding-top: 10px;
+	}
+}
+
+@media (max-width: 480px) {
+
+	.title {
+		font-size: 2rem;
+		margin-top: 100px;
+	}
+
+	.subtitle {
+		font-size: 1.1rem;
+	}
+
+	.description {
+		font-size: 0.9rem;
+	}
+
+}
+
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	.hero {
+		padding: 2rem;
+	}
+
+	.customer-support {
+		display: none;
+	}
+
+	.content-shopping-cart {
+		display: none;
+	}
+    .buttons {
+     visibility: hidden; /* Esto ocultaría el elemento pero lo dejaría ocupando espacio */
+    }
+    
+
+}

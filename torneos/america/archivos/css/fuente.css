@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    margin: 0;
+}
+
+iframe {
+    width: 80%;
+    height: 607px; /* Puedes ajustar la altura según sea necesario */
+}
