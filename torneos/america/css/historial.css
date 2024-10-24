@@ -1,0 +1,105 @@
+/* Estilos generales para la tabla */
+.tabla-historia {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de texto general */
+.tabla-historia .letra {
+    text-align: center;
+    background-color: lightsteelblue;
+    color: black;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+/* Estilo para la fila de la imagen */
+.tabla-historia .imagen {
+    margin: 100px;
+    padding: 0;
+}
+
+/* Imagen ajustada dentro de la tabla */
+.imagen img {
+    max-width: 100%; /* La imagen nunca será más grande que la celda */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+    border-radius: 0;
+}
+.imagen img {
+    max-width: 100%; /* Asegura que la imagen no sea más ancha que el contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    display: block; /* Evita espacios blancos debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    border-radius: 0;
+}
+
+
+/* Estilo del título */
+.tabla-historia .tittle {
+    text-align: center;
+    background-color: lightsteelblue;
+    color: black;
+    padding: 10px 0;
+}
+
+/* Borde de perímetro */
+.perimeter-container {
+    border: 2px solid #000;
+    padding: 20px;
+}
+
+/* Estilo adicional de las celdas */
+.tabla-historia th, .tabla-historia td {
+    padding: 10px;
+    text-align: left;
+}
+.pais{
+    width: 50px;
+}
+.subletra{
+    text-align: left;
+}
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+ 
+
+    border-radius: 5px;
+  
+    padding: 15px;
+  
+    height: 70px;
+    text-align: center;
+ 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Estilo para el párrafo dentro del cuerpo de la tarjeta */
+.card-body p {
+    font-size: 10px;
+    /* Tamaño de fuente */
+    color: #343a40;
+    /* Color de texto */
+    margin: 0;
+    /* Sin margen */
+    font-weight: bold;
+    /* Texto en negrita */
+}
+p {
+    font-size: 13px;
+  
+
+    margin: 0;
+
+    font-weight: bold;
+
+}

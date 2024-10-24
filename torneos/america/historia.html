@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copa America</title>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/historial.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <li class="nav-logo">
+                <img src="img/logo.png" alt="hola" class="logo-img ">
+            </li>
+            <ul class="nav-menu">
+
+                <button id="menu-close-button" class="fas fa-times"></button>
+
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a href="historia.html" class="nav-link">HISTORIA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">SELECCIONES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">PALMARES</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">ESTADISTICAS</a>
+                </li>
+
+            </ul>
+
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <table class="tabla-historia">
+                        <thead>
+                            <tr>
+                                <th colspan="3" class="letra">Copa América</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="imagen" colspan="3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Copa_Am%C3%A9rica_de_F%C3%BAtbol.png/200px-Copa_Am%C3%A9rica_de_F%C3%BAtbol.png"
+                                        alt="Copa América">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="tittle">Dato generales</th>
+                            </tr>
+                            <tr>
+                                <th>Deporte</th>
+                                <td colspan="2"><a>Fútbol</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Nombre oficial</th>
+                                <td colspan="2">
+                                    Conmebol Copa América</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Lema</th>
+                                <td colspan="2">
+                                    <i>El torneo continental más antiguo del mundo</i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Organizador</th>
+                                <td colspan="2">
+                                    <a>Conmebol</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Equipos participantes</th>
+                                <td colspan="2">10</td>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="tittle">Datos
+                                    históricos</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Fundación</th>
+                                <td colspan="2">
+                                    2 de julio de 1916 (108&nbsp;años)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Primera temporada</th>
+                                <td colspan="2">
+                                    <img class="pais"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png"><br>
+                                    <a>Argentina 1916</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Primer campeón</th>
+                                <td colspan="2">
+                                    <img class="pais"
+                                        src="data:image/png;base64,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"><br>
+                                    <a>Uruguay</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="tittle">Datos
+                                    estadísticos</th>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Campeón actual</th>
+                                <td colspan="2">
+                                    <img class="pais"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png"><br>
+                                    <a>Argentina </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Subcampeon actual</th>
+                                <td colspan="2">
+                                    <img class="pais"
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAG1BMVEX/zQDIEC4AMIf/0QCljVgAJYoAMYusGUbKDys+wJaHAAAA0klEQVR4nO3QsQGCABAAsRcE3X9i+r+WMhkhMwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC852ebLNhfbHGxOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSc3NNj+2+bPNh81JOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSflpJyUk3JSTspJOSkn5aSclJNyUk7KSTkpJ+WknJSTclJOykk5KSf1AHEKrxrr7OT9AAAAAElFTkSuQmCC"><br>
+                                    <a>Colombia </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Mas Campeonatos</th>
+                                <td colspan="2">
+                                    <img class="pais"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png"><br>
+                                    <a>Argentina </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Mas Participanciones</th>
+                                <td colspan="2">
+                                    <img class="pais"
+                                        src="data:image/png;base64,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"><br>
+                                    <a>Uruguay</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="subletra">Mas Finales</th>
+                                <td colspan="2">
+                                    <img class="pais"
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/800px-Flag_of_Argentina.svg.png"><br>
+                                    <a>Argentina </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-8">
+                    <br>
+                    <h4>HISTORIA</h4>
+                    <hr>
+                    <h5>Orígenes y Fundación (1916)</h5>
+                    <p>La Copa América, originalmente llamada Campeonato Sudamericano de Fútbol, fue creada el 2 de
+                        julio de 1916 por la Confederación Sudamericana de Fútbol (CONMEBOL). El objetivo era organizar
+                        un torneo entre las selecciones nacionales de América del Sur para fomentar el deporte en la
+                        región. La primera edición se celebró en Argentina y contó con la participación de cuatro
+                        selecciones: Argentina, Brasil, Chile y Uruguay</p>
+                    <p>Uruguay se consagró campeón al ganar todos sus partidos, marcando el inicio de su dominio en la
+                        competición. Este torneo fue significativo no solo por ser el primero de su tipo, sino también
+                        porque estableció una tradición de competiciones internacionales en el continente.</p>
+                    <h5>Dominio Uruguayo (1916-1920)</h5>
+                    <div class="row">
+                        <div class="col-md-8"> <!-- Primera columna -->
+                            <p>Después de su triunfo inaugural, Uruguay continuó su hegemonía en el torneo, ganando
+                                también las ediciones de 1917 y 1920. Durante este período, el fútbol uruguayo mostró un
+                                nivel de juego superior, destacando figuras como José Nasazzi. </p>
+                            <p>LLa Copa América se transformó en un importante evento para la identidad nacional
+                                uruguaya, contribuyendo a su orgullo futbolístico. Además, la rivalidad entre Uruguay y
+                                Argentina comenzó a forjarse, con ambos equipos luchando por la supremacía en el fútbol
+                                sudamericano.</p>
+                        </div>
+                        <div class="col-md-4"> <!-- Segunda columna -->
+                            <div class="card">
+                                <img src="img/historial1.jpg" class="card-img-top" alt="Imagen del Plantel de Uruguay">
+                                <div class="card-body">
+                                    <p>Plantel del Uruguay campeón de la primera edición
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h5>Expansión y Nuevos Participantes (1921-1930)</h5>
+                    <p>Durante la década de 1921 a 1930, la Copa América experimentó una notable expansión, tanto en el
+                        número de participantes como en el nivel de competencia. En 1921, Paraguay y Perú se unieron al
+                        torneo, lo que elevó la cantidad de selecciones a seis. Esta inclusión no solo diversificó el
+                        torneo, sino que también aumentó la competitividad entre los equipos sudamericanos. Paraguay
+                        tuvo un impacto inmediato, logrando el subcampeonato en su primera participación.</p>
+
+                    <p>El formato de la competición se adaptó a esta nueva realidad, adoptando un sistema de liga donde
+                        todos los equipos se enfrentaban entre sí. Este cambio permitió una mayor cantidad de partidos y
+                        un ambiente más emocionante para los aficionados. Durante esta etapa, la rivalidad entre Uruguay
+                        y Argentina continuó intensificándose, con ambos equipos luchando por la supremacía en el fútbol
+                        sudamericano.</p>
+
+                    <p>Argentina se destacó en este período, ganando el torneo en 1921 y nuevamente en 1923, mientras
+                        que Uruguay continuó demostrando su fuerza al conquistar el título en 1923. La Copa América no
+                        solo se convirtió en un evento crucial para la identidad futbolística de los países
+                        participantes, sino que también contribuyó a la profesionalización del fútbol en la región,
+                        atrayendo la atención de un público cada vez más amplio y entusiasta. La década de 1920 sentó
+                        las bases para el crecimiento del fútbol en América del Sur, destacando la importancia del
+                        torneo en el desarrollo de las selecciones nacionales.</p>
+                    <h5>La Era de la Competencia (1935-1950)</h5>
+                    <div class="row">
+                        <div class="col-md-8"> <!-- Primera columna -->
+                            <p>Durante los años 30 y 40, la Copa América se consolidó como un torneo altamente
+                                competitivo en el fútbol sudamericano. La edición de 1935 fue especialmente
+                                significativa, ya que marcó el inicio de una intensa rivalidad entre Uruguay y
+                                Argentina. En 1937, Argentina logró ganar su primer título, lo que simbolizó un cambio
+                                en la dinámica del torneo, donde hasta entonces Uruguay había dominado. Sin embargo, en
+                                1941, Uruguay volvió a salir campeón, reafirmando su estatus como una de las potencias
+                                futbolísticas de la región. </p>
+                            <p>La Copa América sufrió una pausa durante la Segunda Guerra Mundial, lo que detuvo la
+                                celebración del torneo. Sin embargo, en 1945, el evento se reanudó y se notó un aumento
+                                en la participación de equipos como Bolivia y Ecuador, reflejando la expansión del
+                                fútbol en el continente. Este período estuvo marcado por un creciente interés en el
+                                torneo y un aumento en la calidad de las selecciones que competían, lo que sentó las
+                                bases para la evolución del fútbol sudamericano en las décadas siguientes. </p>
+                        </div>
+                        <div class="col-md-4"> <!-- Segunda columna -->
+                            <div class="card">
+                                <img src="img/historial2.jpg" class="card-img-top" alt="Imagen del Plantel de Uruguay">
+                                <div class="card-body">
+                                    <p>Plantel de Bolivia campeón de la edición 1963.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <h5>Cambios de Formato (1950-1980) </h5>
+                    <p>El período de 1950 a 1980, la Copa América experimentó significativos cambios en su formato
+                        que reflejaron la evolución del fútbol sudamericano y la creciente competitividad entre las
+                        selecciones.</p>
+                    <p>En 1950, tras una pausa debido a la Segunda Guerra Mundial, se implementó un nuevo sistema de
+                        competición. En lugar del formato de liga que se había utilizado anteriormente, el torneo
+                        adoptó una estructura de grupos. Esta modificación permitió a las selecciones jugar más
+                        partidos y enfrentarse entre sí en una fase de grupos, lo que hizo que el torneo fuera más
+                        dinámico y emocionante para los aficionados.</p>
+                    <p>La edición de 1956 marcó un cambio adicional al ser la primera en realizarse cada dos años, lo
+                        que aumentó la regularidad del torneo y permitió una mayor preparación para las selecciones. A
+                        medida que la Copa América crecía en popularidad, también lo hacía el número de equipos
+                        participantes. Se comenzaron a invitar selecciones de otras confederaciones, aunque se mantenía
+                        un enfoque principal en los países sudamericanos.</p>
+                    <p>En 1975, la Copa América adoptó un formato completamente nuevo. Se implementaron rondas de
+                        eliminación directa después de la fase de grupos, lo que añadió un elemento de tensión y
+                        competencia intensa. Este formato se mantuvo en las ediciones posteriores, permitiendo que se
+                        llevaran a cabo partidos decisivos que determinaban quién avanzaba a la siguiente etapa.</p>
+                    <p>A lo largo de estas tres décadas, la Copa América se consolidó como uno de los torneos más
+                        prestigiosos del mundo, con un enfoque renovado en el espectáculo y la competencia, reflejando
+                        así el crecimiento del fútbol en el continente. Este periodo fue fundamental para establecer la
+                        identidad de la Copa América como un evento clave en el calendario futbolístico, influyendo en
+                        la trayectoria de las selecciones sudamericanas y en la historia del deporte en la región.</p>
+                    <h5>Inclusión de Países Invitados (1980-1990)</h5>
+                    <p>Durante la década de 1980 a 1990, la Copa América se transformó con la inclusión de países
+                        invitados, lo que amplió su alcance y diversidad. En 1986, México fue el primer país no
+                        sudamericano en participar, lo que enriqueció la competencia y aumentó la popularidad del torneo
+                        en América del Norte. Esta tendencia continuó en 1991 con la invitación de Estados Unidos, lo
+                        que no solo diversificó los estilos de juego, sino que también permitió a las selecciones
+                        sudamericanas enfrentar rivales diferentes.</p>
+                    <p>La inclusión de estos países ayudó a consolidar la Copa América como un evento de prestigio
+                        internacional, atrayendo la atención de aficionados de toda América. Estos cambios reflejaron
+                        una apertura en el torneo hacia una mayor inclusión y diversidad, estableciendo un precedente
+                        para futuras ediciones y enriqueciendo la historia de la competición.</p>
+                    <h5>La Copa América Centenario (2016)</h5>
+                    <div class="row">
+                        <div class="col-md-8"> <!-- Primera columna -->
+                            <p>La Copa América Centenario, celebrada en 2016 en Estados Unidos, conmemoró el centenario
+                                del torneo y reunió a 16 selecciones, incluyendo equipos de la CONCACAF. Fue la primera
+                                edición del torneo fuera de América del Sur, atrayendo a miles de aficionados y
+                                generando un gran interés mediático.</p>
+                            <p>Chile se coronó campeón al vencer a Argentina en una final que terminó 0-0 y se decidió
+                                por penales (4-2), marcando su segundo título consecutivo en la Copa América. Esta
+                                edición destacó por la calidad del juego y la competencia, reforzando el estatus de
+                                Chile como una de las selecciones más competitivas del continente.</p>
+
+                        </div>
+                        <div class="col-md-4"> <!-- Segunda columna -->
+                            <div class="card">
+                                <img src="img/historial3.jpg" class="card-img-top" alt="Imagen del Plantel de Uruguay">
+                                <div class="card-body">
+                                    <p>Plantel de Bolivia campeón de la edición 1963.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>La Copa América Centenario no solo celebró la rica historia del torneo, sino que también
+                        promovió la unidad en el fútbol y subrayó la importancia del deporte en América del
+                        Norte, dejando un legado duradero para futuras generaciones.</p>
+                    <h5>Ediciones Recientes (2019-2021)</h5>
+                    <p>En 2019, la Copa América se celebró en Brasil, que se consagró campeón al vencer a Perú en la
+                        final. Este torneo tuvo un formato similar al de años anteriores, con 12 equipos en total.</p>
+                    <p>En 2021, la Copa América tuvo lugar en Brasil nuevamente, debido a la pandemia de COVID-19.
+                        Argentina ganó el título al vencer a Brasil en el Estadio Maracaná, lo que marcó el primer
+                        título importante de la selección argentina desde 1993. Este triunfo fue muy emotivo para Lionel
+                        Messi, quien finalmente logró alzar un trofeo con su selección después de años de intentos.</p>
+                    <h5>Dominio Actual de Argentina</h5>
+                    <p>En la edición de 2021, Argentina rompió una sequía de 28 años sin títulos internacionales al
+                        ganar la Copa América, celebrada en Brasil. En la final, se enfrentaron al anfitrión y eterno
+                        rival, Brasil, en el Estadio Maracaná. Argentina ganó 1-0 gracias a un gol de Ángel Di María, en
+                        lo que fue una de las victorias más significativas de su historia reciente. Este título fue
+                        crucial para Lionel Messi, quien finalmente logró su primer gran trofeo internacional con su
+                        selección. El torneo fue clave para elevar el estatus de Argentina en el fútbol mundial y
+                        devolverles la confianza tras años de quedarse a las puertas de otros títulos importantes.</p>
+                    <p>El dominio continuó en la Copa América 2024, donde Argentina reafirmó su posición al ganar su
+                        segundo título consecutivo. En una final disputada contra Colombia, Argentina venció 1-0, con
+                        Lautaro Martínez anotando el gol decisivo. Este triunfo consolidó a la Albiceleste como la
+                        selección más fuerte de la región en la actualidad, con Lionel Messi nuevamente liderando el
+                        equipo como capitán y estrella, a pesar de estar en la fase final de su carrera. Con este
+                        título, Argentina alcanzó su 16º trofeo en la historia del torneo, consolidando su lugar en la
+                        cima del fútbol sudamericano.</p>
+                    <p>Este éxito continuo en los torneos de 2021 y 2024 no solo significó la consagración de una
+                        generación dorada de jugadores argentinos, sino también el cierre perfecto para la carrera de
+                        Lionel Messi a nivel internacional, reafirmando su legado como uno de los mejores futbolistas de
+                        todos los tiempos​. </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Pagina de Futbol. Todos los derechos reservados.</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+                <a href="#" class="social-icon">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
